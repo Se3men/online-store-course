@@ -10,8 +10,9 @@ import { observer } from 'mobx-react-lite';
 import { useHistory } from 'react-router-dom';
 
 const NavBar = observer(() => {
-  const {user} = useContext(Context);
-  const history = useHistory()
+  const { user } = useContext(Context);
+  const history = useHistory();
+
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
