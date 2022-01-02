@@ -18,7 +18,7 @@ const CreateDevice = observer(({show, onHide}) => {
   }, [])
 
   const addInfo = () => {
-    setInfo([...info, { title: '', description: '', number: Date.now() }])
+    setInfo([...info, { title: '', description: '', number: `${Date.now()}` }])
   }
 
   const removeInfo = (number) => {
